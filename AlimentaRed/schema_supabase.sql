@@ -311,13 +311,13 @@ ALTER SEQUENCE organizacion_id_organizacion_seq RESTART WITH 6;
 
 -- Usuarios (Contraseñas: Admin12345, Coord12345, Pass12345 encriptadas con BCrypt)
 INSERT INTO usuario (id_usuario, nombre, correo, contrasena, rol, organizacion_id, activo) VALUES
-(1, 'Administrador AlimentaRed', 'admin@alimentared.com', '$2a$10$wE2o1bC2y022oHkFp/V02.0Jvh1r4hXhE4lq4Yn2H9uP/0c9zR2nK', 'ADMINISTRADOR', NULL, TRUE),
-(2, 'Coordinador Red Comunitaria', 'coordinador@alimentared.com', '$2a$10$tZ2E7/i/f8uVnQ9iQ2tTte2yG1Fj1uGkE5o7K7o9aK.t0y4rM7hVq', 'COORDINADOR', NULL, TRUE),
-(3, 'Chef Martín Pérez', 'donante@saborcasero.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVKIUi', 'DONANTE', 1, TRUE),
-(4, 'Gerente Panificadora Central', 'donante@panificadoracentral.com', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVKIUi', 'DONANTE', 2, TRUE),
-(5, 'Hermana Teresa - Pan Compartido', 'receptora@pancompartido.org', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVKIUi', 'RECEPTORA', 3, TRUE),
-(6, 'Trabajadora Social Laura', 'receptora@comedoresperanza.org', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVKIUi', 'RECEPTORA', 4, TRUE),
-(7, 'Delegado Abuelitos de la Paz', 'suspendido@abuelitospaz.org', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVKIUi', 'RECEPTORA', 5, TRUE)
+(1, 'Administrador AlimentaRed', 'admin@alimentared.com', '$2a$10$jdKHXw5XRfrXS7W7242I8eT6qq9wAJX02LM7nXPMzGujziRwahZp6', 'ADMINISTRADOR', NULL, TRUE),
+(2, 'Coordinador Red Comunitaria', 'coordinador@alimentared.com', '$2a$10$mH5aZQxfshLlB8XLm6FQNem8OmkyKbgmB/eNZZzMXAhKyIHxJhUwW', 'COORDINADOR', NULL, TRUE),
+(3, 'Chef Martín Pérez', 'donante@saborcasero.com', '$2a$10$7HCDGsvQ4XcAdcY8cfYH4OvEUBdo/PFqFhG6oR45qWGnKFLPncenK', 'DONANTE', 1, TRUE),
+(4, 'Gerente Panificadora Central', 'donante@panificadoracentral.com', '$2a$10$7HCDGsvQ4XcAdcY8cfYH4OvEUBdo/PFqFhG6oR45qWGnKFLPncenK', 'DONANTE', 2, TRUE),
+(5, 'Hermana Teresa - Pan Compartido', 'receptora@pancompartido.org', '$2a$10$7HCDGsvQ4XcAdcY8cfYH4OvEUBdo/PFqFhG6oR45qWGnKFLPncenK', 'RECEPTORA', 3, TRUE),
+(6, 'Trabajadora Social Laura', 'receptora@comedoresperanza.org', '$2a$10$7HCDGsvQ4XcAdcY8cfYH4OvEUBdo/PFqFhG6oR45qWGnKFLPncenK', 'RECEPTORA', 4, TRUE),
+(7, 'Delegado Abuelitos de la Paz', 'suspendido@abuelitospaz.org', '$2a$10$7HCDGsvQ4XcAdcY8cfYH4OvEUBdo/PFqFhG6oR45qWGnKFLPncenK', 'RECEPTORA', 5, TRUE)
 ON CONFLICT (id_usuario) DO NOTHING;
 
 ALTER SEQUENCE usuario_id_usuario_seq RESTART WITH 8;
