@@ -1,0 +1,31 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files
+target/
+*.jar
+*.war
+*.nar
+*.ear
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+# Android Studio / Local
+local.properties
+.cxx/
+*.apk
+*.aab
+captures/
+
+# OS
+.DS_Store
+Thumbs.db
